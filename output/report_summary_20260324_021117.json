@@ -1,0 +1,10 @@
+{
+  "timestamp": "20260324_021117",
+  "seed": 42,
+  "python": "3.13.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "metrics_file": "output/report_metrics_20260324_021117.csv",
+  "efficiency_file": "output/report_efficiency_20260324_021117.csv",
+  "model_size_file": "output/report_model_size_20260324_021117.csv",
+  "failures_file": "output/report_failures_20260324_021117.csv"
+}

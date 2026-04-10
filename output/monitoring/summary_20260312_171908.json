@@ -1,0 +1,16 @@
+{
+  "timestamp": "20260312_171908",
+  "reference": "output/monitoring_reference.csv",
+  "recent": "simulated_from_reference",
+  "rows_reference": 227845,
+  "rows_recent": 24000,
+  "alerts": [
+    "CRITICAL drift: 13 features",
+    "WARNING drift: 2 features"
+  ],
+  "artifacts": {
+    "drift_csv": "output/monitoring\\drift_20260312_171908.csv",
+    "quality_csv": "output/monitoring\\quality_20260312_171908.csv",
+    "dashboard_png": "output/monitoring\\dashboard_20260312_171908.png"
+  }
+}

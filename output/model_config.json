@@ -1,0 +1,51 @@
+{
+  "optimal_threshold": 0.6200285994615138,
+  "feature_names": [
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V10",
+    "V11",
+    "V12",
+    "V13",
+    "V14",
+    "V15",
+    "V16",
+    "V17",
+    "V18",
+    "V19",
+    "V20",
+    "V21",
+    "V22",
+    "V23",
+    "V24",
+    "V25",
+    "V26",
+    "V27",
+    "V28",
+    "Hour_sin",
+    "Hour_cos",
+    "Amount_scaled",
+    "Amount_log",
+    "Amount_deviation",
+    "V_amount_interaction",
+    "PCA_magnitude"
+  ],
+  "model_weights": {
+    "random_forest": 0.35,
+    "xgboost": 0.35,
+    "logistic": 0.15,
+    "deep_learning": 0.15
+  },
+  "performance_metrics": {
+    "ensemble_roc_auc": 0.9792051281683185,
+    "ensemble_avg_precision": 0.7157232002651032,
+    "ensemble_f1": 0.7783251231527094
+  }
+}

@@ -1,0 +1,144 @@
+--- Training Cell Output (cell 22) ---
+(See notebook cell output for full training logs: output too large to embed here.)
+
+--- Evaluation Cell Output (cell 26) ---
+============================================================
+MODEL EVALUATION
+============================================================
+
+==================================================
+EVALUATION: RANDOM_FOREST
+==================================================
+              precision    recall  f1-score   support
+
+  Legitimate       1.00      1.00      1.00     56864
+       Fraud       0.56      0.89      0.69        98
+
+    accuracy                           1.00     56962
+   macro avg       0.78      0.94      0.84     56962
+weighted avg       1.00      1.00      1.00     56962
+
+
+Key Metrics:
+  ROC-AUC: 0.9800
+  Average Precision (AUC-PR): 0.8451
+  F1-Score: 0.6877
+
+Confusion Matrix:
+  True Negatives:   56796 | False Positives:   68
+  False Negatives:     11 | True Positives:    87
+
+Business Metrics:
+  Fraud Detection Rate: 88.8%
+  False Alarm Rate: 68/56864 (0.12%)
+
+==================================================
+EVALUATION: XGBOOST
+==================================================
+              precision    recall  f1-score   support
+
+  Legitimate       1.00      1.00      1.00     56864
+       Fraud       0.46      0.88      0.60        98
+
+    accuracy                           1.00     56962
+   macro avg       0.73      0.94      0.80     56962
+weighted avg       1.00      1.00      1.00     56962
+
+
+Key Metrics:
+  ROC-AUC: 0.9810
+  Average Precision (AUC-PR): 0.8547
+  F1-Score: 0.5993
+
+Confusion Matrix:
+  True Negatives:   56761 | False Positives:  103
+  False Negatives:     12 | True Positives:    86
+
+Business Metrics:
+  Fraud Detection Rate: 87.8%
+  False Alarm Rate: 103/56864 (0.18%)
+
+==================================================
+EVALUATION: LOGISTIC
+==================================================
+              precision    recall  f1-score   support
+
+  Legitimate       1.00      0.97      0.99     56864
+       Fraud       0.06      0.92      0.10        98
+
+    accuracy                           0.97     56962
+   macro avg       0.53      0.95      0.55     56962
+weighted avg       1.00      0.97      0.98     56962
+
+
+Key Metrics:
+  ROC-AUC: 0.9760
+  Average Precision (AUC-PR): 0.7358
+  F1-Score: 0.1039
+
+Confusion Matrix:
+  True Negatives:   55320 | False Positives: 1544
+  False Negatives:      8 | True Positives:    90
+
+Business Metrics:
+  Fraud Detection Rate: 91.8%
+  False Alarm Rate: 1544/56864 (2.72%)
+
+==================================================
+EVALUATION: DEEP_LEARNING
+==================================================
+              precision    recall  f1-score   support
+
+  Legitimate       1.00      0.99      0.99     56864
+       Fraud       0.10      0.90      0.18        98
+
+    accuracy                           0.99     56962
+   macro avg       0.55      0.94      0.59     56962
+weighted avg       1.00      0.99      1.00     56962
+
+
+Key Metrics:
+  ROC-AUC: 0.9824
+  Average Precision (AUC-PR): 0.7380
+  F1-Score: 0.1807
+
+Confusion Matrix:
+  True Negatives:   56076 | False Positives:  788
+  False Negatives:     10 | True Positives:    88
+
+Business Metrics:
+  Fraud Detection Rate: 89.8%
+  False Alarm Rate: 788/56864 (1.39%)
+
+==================================================
+EVALUATION: ENSEMBLE MODEL
+==================================================
+              precision    recall  f1-score   support
+
+  Legitimate       1.00      1.00      1.00     56864
+       Fraud       0.73      0.64      0.68        98
+
+    accuracy                           1.00     56962
+   macro avg       0.87      0.82      0.84     56962
+weighted avg       1.00      1.00      1.00     56962
+
+
+Key Metrics:
+  ROC-AUC: 0.9726
+  Average Precision (AUC-PR): 0.6902
+  F1-Score: 0.6848
+
+Confusion Matrix:
+  True Negatives:   56841 | False Positives:   23
+  False Negatives:     35 | True Positives:    63
+
+Business Metrics:
+  Fraud Detection Rate: 64.3%
+  False Alarm Rate: 23/56864 (0.04%)
+
+==================================================
+OPTIMAL THRESHOLD ANALYSIS
+==================================================
+Default threshold (0.5) F1: 0.6848
+Optimal threshold (0.466) F1: 0.7500
+Recommendation: Use threshold 0.466 for production
